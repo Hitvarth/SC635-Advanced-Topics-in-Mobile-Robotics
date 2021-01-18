@@ -1,0 +1,5 @@
+<launch>
+<node pkg="week1_170040012_190100057" name="roll_talker" type="roll_talker"/>
+<node pkg="week1_170040012_190100057" name="name_talker" type="name_talker" />
+<node pkg="week1_170040012_190100057" name="listener" type="listener" output="screen"/>
+</launch>
