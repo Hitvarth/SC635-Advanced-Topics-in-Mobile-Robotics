@@ -1,0 +1,2 @@
+Time taken for one revolution is: 82.6551349163 seconds
+RMS value is: 3.9239902593208145 metres

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<launch> 
+<include file="$(find week3)/launch/trilateration_load.launch"/>   
+<node name="get_pose" pkg="week3_170040012_190100057" type="get_pose.py" output="screen"/>
+<node name="follow_circle" pkg="week3_170040012_190100057" type="follow_circle.py" output="screen"/>
+</launch>
