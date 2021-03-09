@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+  	<arg name="world_name" value="$(find week5)/worlds/landmarks.world"/>
+  </include>
+
+  <include file="$(find kobuki_gazebo)/launch/includes/robot.launch.xml"/>
+
+  <node name="manual_odometry" pkg="week5" type="manual_odom.py" output="screen"/>
+  <!-- <node name="give_vel" pkg="week5" type="give_vel.py" output="screen"/> -->
+  <node name="give_vel_partC" pkg="week5" type="give_vel_partC.py" output="screen"/>
+  <!-- <node name="open_loop" pkg="week5" type="open_loop.py" output="screen"/> -->
+  <!-- <node name="belief_propagation" pkg="week5" type="belief_propagation.py" output="screen"/> -->
+  <param name="/use_sim_time" value="false"/>
+</launch>
+
